@@ -1,0 +1,73 @@
+<!-- Ctrl + ? - is the shortcut for a comment in VS Code in whatever language you are coding in 
+   Shift + 1 will build the default HTML tags
+    Doctype html - tells the browser that this is an HTML5 webpage
+-->
+<!DOCTYPE html>
+<!-- the 2nd tag on our webpage needs to be the html tag; language = English is automatically added by VS Code -->
+<html lang="en">
+    <!-- head is primarily info for the browser and search engines -->
+    <head>
+        <!-- this tells the browser to expect pretty much any character from any language -->
+        <meta charset="UTF-8">
+        <!-- this is first step in making sure our website looks good on a mobile device -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- the text that appears in the browser tab -->
+        <title>Escape Room HTML Example</title>
+
+        <!-- add the link to the external CSS file -->
+        <link rel="stylesheet" href="main.css">
+
+         <!-- our JavaScript code is written in between opening and closing script tags 
+             to include JavaScript code from a separate JavaScript file, use the src attribute with the file name -->
+        <script src="escape_room.js" defer></script>
+    </head>
+    <!-- any text, images, videos - all of the content we want to show the user goes in the body section -->
+    <body> 
+        <!-- the header section is a best practice; typically at the top of the page; may contain menu, logo, page title -->
+        <header>
+            <!-- h1 is the top level heading - page title - only use 1 h1 tag on a page -->
+            <h1>Escape Room HTML Example</h1>
+            <a href="https://uat.edu">UAT Website</a>
+            <a href="./other_page.html">Other page</a>
+        </header>
+
+        <!-- I like to put the core content of my page in a main section -->
+        <main>
+            <!-- I am going to organize the rooms using article tags -->
+            <article>
+                <!-- h2 - 2nd level heading - sub title -->
+                <h2>Lab</h2>
+                <!-- image - make sure to set the source and alt for each image -->
+                <img src="./images/lab.jpg" alt="Lab" id="img1">
+                <p id="pLab"></p>
+            </article>
+
+             <!-- I am going to organize the rooms using article tags -->
+            <article>
+                <!-- h2 - 2nd level heading - sub title -->
+                <h2>Island</h2>
+                <!-- image - make sure to set the source and alt for each image -->
+                <img src="./images/island.jpg" alt="Island">
+                <p id="pIsland"></p>
+            </article>
+
+             <!-- I am going to organize the rooms using article tags -->
+            <article>
+                <!-- h2 - 2nd level heading - sub title -->
+                <h2>Pyramid</h2>
+                <!-- image - make sure to set the source and alt for each image -->
+                <img src="./images/pyramid.jpg" alt="Pyramid">
+                <p id="pPyramid">Find your way.</p>
+            </article>
+        </main>
+
+        <!-- anything that needs to go at the bottom of the page - legal stuff -->
+        <footer>
+
+        </footer>
+
+       
+    <!-- this should be the next to last line of our .html page -->
+    </body>
+    <!-- this should be the last line of our .html page -->
+</html>

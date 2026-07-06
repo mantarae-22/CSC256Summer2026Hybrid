@@ -1,0 +1,28 @@
+ /* body will affect the whole page */
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* this img selector will affect all images on the page - setting their widths to 300 pixels */
+img{
+    width: 95%;
+    height: 500px;
+    max-width: 400px;
+    object-fit: cover;
+    border: 5px solid rgba(105, 147, 105, .8);
+    border-radius: 15px;
+}
+
+@media (max-width: 600px){
+    main{
+        text-align: center;
+        flex-direction: column;
+    }
+}
