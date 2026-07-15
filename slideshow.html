@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    
+    <!-- link to the css file -->
+    <link rel="stylesheet" href="slideshow.css">
+
+    <!-- if you link the JavaScript file in the head section make sure to add the defer attribute so the JavaScript code will run after the HTML elements have been created -->
+    <script src="slideshow.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Ctrl + ? is the quick comment key commands -->
+        <h1>Slideshow</h1>
+    </header>
+    <main>
+        <h2>Use the buttons to change the image</h2>
+        <img id="imgSlide" src="" alt="slideshow image">
+        
+        <div>
+            <button onclick="previousImage();">Previous</button>
+            <button onclick="nextImage();">Next</button>
+        </div>
+    </main>    
+</body>
+</html>

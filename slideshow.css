@@ -1,0 +1,30 @@
+header, main{
+    text-align: center;
+}
+
+/* this style will only apply to an element with the ID of imgSlide */
+#imgSlide{
+    width: 100%;
+    border-radius: 15px;
+    max-width: 1000px;
+    border: 3px solid maroon;
+    object-fit: cover;
+    height: 400px;
+}
+
+button{
+    background-color: maroon;
+    color: whitesmoke;
+    padding: 8px;
+    /*border-left: 3px solid green;
+    border-right: 3px solid green;*/
+    border: none;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px maroon;
+    border: 1px solid tan;            
+}
+
+button:hover{         
+    color: maroon;
+    background-color: whitesmoke;
+}
